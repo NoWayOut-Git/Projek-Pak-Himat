@@ -1,0 +1,565 @@
+/* =========================
+   TOKOKOPILOT VINTAGE STYLE
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+:root{
+
+--dark:#2C1810;
+--coffee:#4E342E;
+--gold:#C8A97E;
+--cream:#F5EEE6;
+--paper:#EFE4D2;
+--white:#ffffff;
+
+}
+
+body{
+
+background:var(--cream);
+
+min-height:100vh;
+
+color:var(--dark);
+
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+
+height:90px;
+
+background:var(--dark);
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 40px;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+box-shadow:0 4px 20px rgba(0,0,0,.15);
+
+}
+
+.nav-left{
+
+width:220px;
+
+}
+
+.nav-left a{
+
+color:var(--gold);
+
+font-size:28px;
+
+text-decoration:none;
+
+}
+
+.nav-center{
+
+flex:1;
+
+text-align:center;
+
+font-size:42px;
+
+font-weight:bold;
+
+font-family:Georgia, serif;
+
+letter-spacing:2px;
+
+color:var(--gold);
+
+}
+
+.nav-right{
+
+width:220px;
+
+display:flex;
+
+justify-content:flex-end;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.nav-right a{
+
+color:var(--cream);
+
+text-decoration:none;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+.nav-right a:hover{
+
+color:var(--gold);
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+min-height:85vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:80px;
+
+padding:80px;
+
+}
+
+.hero-text{
+
+max-width:600px;
+
+}
+
+.hero-text h1{
+
+font-size:75px;
+
+line-height:1.1;
+
+font-family:Georgia, serif;
+
+margin-bottom:25px;
+
+}
+
+.hero-text span{
+
+color:var(--gold);
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+line-height:2;
+
+color:#5d4037;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:16px 35px;
+
+background:var(--coffee);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+background:var(--dark);
+
+transform:translateY(-5px);
+
+}
+
+.hero-image img{
+
+width:450px;
+
+height:600px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title{
+
+text-align:center;
+
+font-size:55px;
+
+font-family:Georgia, serif;
+
+margin-top:50px;
+
+margin-bottom:40px;
+
+color:var(--dark);
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:35px;
+
+padding:40px;
+
+}
+
+/* =========================
+   CARD PRODUK
+========================= */
+
+.card{
+
+width:320px;
+
+background:#fffaf4;
+
+border-radius:25px;
+
+overflow:hidden;
+
+border:1px solid #d8c3a5;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+}
+
+.content{
+
+padding:20px;
+
+}
+
+.content h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+color:var(--dark);
+
+}
+
+.price{
+
+font-size:26px;
+
+font-weight:bold;
+
+color:var(--coffee);
+
+margin-top:10px;
+
+margin-bottom:15px;
+
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.buy-btn{
+
+display:block;
+
+text-align:center;
+
+padding:14px;
+
+background:var(--coffee);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.buy-btn:hover{
+
+background:var(--dark);
+
+}
+
+.detail-btn{
+
+display:block;
+
+text-align:center;
+
+padding:14px;
+
+background:var(--gold);
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+margin-bottom:10px;
+
+transition:.3s;
+
+}
+
+.detail-btn:hover{
+
+opacity:.9;
+
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn{
+
+display:inline-block;
+
+margin:20px;
+
+padding:12px 20px;
+
+background:white;
+
+color:var(--coffee);
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.back-btn:hover{
+
+transform:translateY(-5px);
+
+}
+
+.back-btn i{
+
+margin-right:8px;
+
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-container{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#efe4d2,
+
+#f5eee6
+
+);
+
+}
+
+.login-box{
+
+width:420px;
+
+background:white;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.login-box h1{
+
+text-align:center;
+
+margin-bottom:30px;
+
+font-family:Georgia, serif;
+
+color:var(--dark);
+
+}
+
+.login-box input{
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+}
+
+.login-box button{
+
+width:100%;
+
+padding:15px;
+
+margin-top:20px;
+
+border:none;
+
+background:var(--coffee);
+
+color:white;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+.error{
+
+background:#d62828;
+
+color:white;
+
+padding:12px;
+
+border-radius:10px;
+
+margin-bottom:15px;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:40px;
+
+}
+
+.hero-image img{
+
+width:320px;
+
+height:420px;
+
+}
+
+.nav-center{
+
+font-size:28px;
+
+}
+
+.nav-right{
+
+display:none;
+
+}
+
+}
